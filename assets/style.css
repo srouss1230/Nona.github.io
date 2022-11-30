@@ -3,7 +3,7 @@
     color: white;
 }
 .background-hero-container {
-    background-image: url(group-photo.jpg);
+    background-image: url(assets/group-photo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
