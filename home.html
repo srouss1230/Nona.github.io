@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+
+{% block content %}
+
+    <div id="content1">
+
+        <h1 class="hero">im <span class="text-shadow">zach cohn</span>,<br><span class="z-primary-color">dev</span> and <span class="z-primary-color">theatre artist</span></h1>
+        <p class="hero">I'm passionate about building full-stack, impactful web apps and the ways emerging technologies interface with the arts</p>
+        <div class="d-flex flex-row justify-content-between">
+            <div class="d-flex flex-row mt-2">
+                <a href="/contact"><button class="z-btn-primary hero-btn"><span>Contact Me</span></button></a>
+                <a href="/projects"><button class="z-btn-secondary ms-3 hero-btn"><span>View Work</span></button></a>
+            </div>
+        </div>
+
+        <img src="{{asset_uri}}/images/hero.svg" class="hero d-none d-sm-block" alt="hero image">
+
+
+
+    </div>
+{% endblock %}
+
+{%  block content2 %}
+    <div id="content2">
+       <h1 class="hero mt-0 text-white">Skills</h1>
+        <div class="mt-4">
+            <h2 class="z-third-color">Languages</h2>
+
+            <div class="technologies-container">
+                <i class="devicon-python-plain tech-icon"></i>
+                <i class="devicon-javascript-plain tech-icon"></i>
+                <i class="devicon-php-plain tech-icon"></i>
+                <i class="devicon-html5-plain tech-icon"></i>
+                <i class="devicon-css3-plain tech-icon"></i>
+                <i class="devicon-arduino-plain tech-icon"></i>
+            </div>
+
+            <h2 class="z-third-color">Frameworks</h2>
+
+            <div class="technologies-container">
+                <i class="devicon-flask-plain tech-icon"></i>
+                <i class="devicon-react-original tech-icon"></i>
+                <i class="devicon-bootstrap-plain tech-icon"></i>
+                <i class="devicon-jquery-plain tech-icon"></i>
+                <i class="devicon-nodejs-plain tech-icon"></i>
+            {#  Or maybe this one instead #}
+                <i class="devicon-nodejs-plain-wordmark tech-icon"></i>
+                <i class="devicon-vuejs-plain tech-icon"></i>
+            </div>
+
+            <h2 class="z-third-color">Databases</h2>
+
+            <div class="technologies-container">
+                <i class="devicon-mysql-plain-wordmar tech-iconk"></i>
+                {#  or maybe use this one instead #}
+                <i class="devicon-mysql-plain tech-icon"></i>
+                <i class="devicon-postgresql-plain tech-icon"></i>
+                <i class="devicon-mongodb-plain tech-icon"></i>
+            </div>
+
+            <h2 class="z-third-color">Technologies</h2>
+
+            <div class="technologies-container">
+                <i class="devicon-photoshop-plain tech-icon"></i>
+                <i class="devicon-premierepro-plain tech-icon"></i>
+                <i class="devicon-amazonwebservices-original tech-icon"></i>
+                <i class="devicon-git-plain tech-icon"></i>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+{% endblock %}
+
+
+{% block js %}{% endblock %}

@@ -1,0 +1,323 @@
+/* set variables */
+
+:root {
+    --z-primary : #7d0015;
+    --z-secondary : #630010;
+    --z-text-shadow : #7d0015;
+    --z-secondary-box-shadow : #2020200f;
+    --z-secondary-box-shadow-hover : #2020201f;
+    --z-third : #7d0015;
+    --z-icon : #ffffff;
+    --z-gray : #b1b1b1;
+}
+
+
+.hero-img {
+    position: relative;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+}
+
+*:not(p) {
+	font-family: OceanwideProSemibold;
+}
+
+.z-primary-color {
+    color: var(--z-primary) !important;
+}
+
+.z-third-color {
+    color: var(--z-third) !important;
+}
+
+.text-shadow {
+    text-shadow: 2.5px 2px var(--text-shadow);
+}
+
+.z-text-shadow-color {
+    color: var(--text-shadow) !important;
+}
+h1,h2,h3,h4,h5,a,p {
+    padding-top: .2em;
+}
+
+html, body {
+    /* height: 100%; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 0 auto;
+    padding: 3em 3em 0;
+    width: 95%;
+    margin: auto;
+    height: 100%;
+}
+
+
+
+.logo .icon {
+    width: 8vw;
+    max-width: 35px;
+}
+
+button.z-btn-primary {
+    padding: .7rem 1.5rem;
+    border-radius: .4rem;
+    border: none;
+    border: 1px solid var(--z-primary);
+    background-color: var(--z-primary);
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    display: flex;
+}
+
+button.z-btn-primary:hover {
+    background-color: var(--z-secondary);
+    border-color: var(--z-secondary);
+}
+
+button.z-btn-primary span {
+    padding-top: .2em;
+    font-size: 1.2rem;
+}
+
+.hero-btn .z-btn-primary {
+    box-shadow: rgba(0, 0, 0, 0.08) 0 0 10px 10px;
+}
+button.z-btn-secondary {
+    padding: .7rem 1.5rem;
+    border-radius: .4rem;
+    border: none;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 13px;
+    display: flex;
+    box-shadow: var(--secondary-box-shadow) 0 0 20px 10px
+}
+
+button.z-btn-secondary:hover {
+    box-shadow: var(--secondary-box-shadow-hover) 0 0 20px 10px;
+
+    color: #111111;
+}
+
+button.z-btn-secondary span {
+    padding-top: .2em;
+    font-size: 1.2rem;
+}
+
+.offset-header-mt {
+    margin-top: 75px;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3em 5.2em 20px;
+    background-color: white;
+    margin: auto;
+    z-index: 999999;
+
+}
+
+
+
+.navbar a {
+    text-decoration: none;
+    color: var(--z-gray);
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+
+
+.header-side {
+    width: 100px;
+}
+
+p {
+    font-family: Roboto;
+    font-weight: 400;
+    color: var(--z-gray);
+}
+
+p.main-color {
+    color: var(--z-primary);
+}
+
+a, p {
+    font-size: 1.2rem;
+}
+
+a {
+    padding: 0;
+    text-decoration: none;
+}
+
+.w-fit-content {
+    width: fit-content;
+}
+
+
+.animate-hover {
+    display: inline-block;
+    position: relative;
+}
+
+.h-fit-content {
+    height: fit-content !important;
+}
+
+.w-fit-content {
+    width: fit-content !important;
+}
+.animate-hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--z-primary);
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    transform-origin: bottom left;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.animate-hover:hover:after {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.nopacity {
+    opacity: 0 !important;
+}
+
+.footer {
+    padding: 2em;
+}
+
+.footer .footer-icon {
+    font-size: 25pt;
+    margin: 10px !important;
+    opacity: .2;
+    filter: contrast(0);
+    cursor: pointer;
+}
+
+.footer .footer-icon:hover {
+    opacity: 1;
+    filter:none;
+
+}
+
+
+
+
+/* When screen is narrower than 500px, */
+@media screen and (max-width: 500px) {
+    .content {
+        width: 100% !important;
+        padding: 2em !important;
+    }
+
+    .header div {
+        width: 100%;
+    }
+
+    button.z-btn-primary {
+        padding: .7rem .7rem;
+    }
+
+    button.z-btn-secondary {
+        padding: .7rem .7rem;
+    }
+
+}
+
+
+
+.thumbnail-hero {
+    position: absolute;
+    animation: drop-in 1s forwards;
+    animation-delay: .25s;
+    right: 5vw;
+    margin-top: 0;
+    border-radius: .25em;
+    /* tilt the image slightly */
+    transform: perspective(200px) rotate3D(0, .2, 0, -5deg);
+    /* add a drop shadow */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%;
+    max-width: 650px;
+    transition: all 1s ease;
+    opacity: 0;
+}
+
+.thumbnail-hero:hover {
+    transform: perspective(250px) rotate3D(0, .2, 0, -5deg);
+}
+
+@keyframes drop-in {
+    0% {
+        opacity: 0;
+        margin-top: -0;
+    }
+    100% {
+        opacity: 1;
+        margin-top: 25vh;
+    }
+    
+}
+
+.thumbnail-hero img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+/*  on mobile, (according to boostrap md breakpoint) */
+@media screen and (max-width: 992px) {
+    .hero-img {
+        position: static;
+    }
+
+
+    .thumbnail-hero {
+        position: static;
+
+        transition: all 0s ease;
+        margin-top: 5vh !important;
+        transform: perspective(0px) rotate3D(0, 0, 0, 0deg) !important;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2) !important;
+        width: 100% !important;
+    }
+
+    .thumbnail-hero:hover {
+        transform: perspective(50px) rotate3D(0, .2, 0, -5deg);
+    }
+
+}

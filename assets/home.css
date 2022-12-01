@@ -1,0 +1,86 @@
+h1.hero {
+    font-size: min(max(2.3rem, 5vw), 5.5rem);
+    margin-top: 30vh;
+}
+
+p.hero {
+    max-width: 50vw;
+
+}
+
+.down-container div {
+    position: absolute;
+    right: 5vw;
+}
+.down-container div p {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+.down-container div img {
+    height: 70px;
+}
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+img.hero {
+    position: absolute;
+    bottom: 0;
+    max-width: 38vw;
+    z-index: -1;
+    opacity: 1.5;
+    right: 5vw;
+    max-height: 80vh;
+    transform: scaleX(-1);
+}
+
+
+#content1 {
+    height: 100%;
+}
+
+#content2 {
+  padding: 4em;
+  background: var(--z-primary);
+  width: 100%;
+  position: absolute;
+  top: 100%;
+}
+
+.tech-icon {
+    font-size: 7vw;
+    margin-left: .15em;
+    margin-right: .15em;
+    color: var(--z-icon);
+
+}
+
+.technologies-container {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+@media screen and (min-width: 900px) {
+    .tech-icon {
+        font-size: 55pt;
+    }
+}
+
+/* on mobile, */
+@media screen and (max-width: 500px) {
+    h1.hero {
+        margin-top: 25vh;
+    }
+
+    p.hero {
+        max-width: none;
+    }
+
+    #content2 {
+        padding: 2em;
+    }
+
+
+}

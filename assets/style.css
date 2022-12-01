@@ -3,7 +3,7 @@
     color: white;
 }
 .background-hero-container {
-    background-image: url(assets/group-photo.jpg);
+    background-image: url(group-photo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -81,4 +81,21 @@
 
 .make-room-for-hero h1 {
     font-size: 40pt;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 15vw;
+    }
+    .hero h3 {
+        font-size: 15pt;
+    }
+    .engage-container button {
+        font-size: 10pt;
+    }
+    .make-room-for-hero h1 {
+        font-size: 30pt;
+    }
 }
