@@ -259,7 +259,7 @@ a {
 .thumbnail-hero {
     position: absolute;
     animation: drop-in 1s forwards;
-    animation-delay: .25s;
+    animation-delay: 1s;
     right: 5vw;
     margin-top: 0;
     border-radius: .25em;
