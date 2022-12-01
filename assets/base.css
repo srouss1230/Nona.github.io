@@ -12,6 +12,11 @@
 }
 
 
+
+.goal-not-reached {
+    color: green;
+}
+
 .hero-img {
     position: relative;
 }
@@ -254,7 +259,18 @@ a {
 
 }
 
+.donate-btn {
+    background-color: white;
+    padding: .7rem 2.5rem;
+    border-radius: .4rem;
+    border: none;
+    margin-top: 20px;
+}
 
+.donate-btn:hover {
+    background-color: green;
+    color: white;
+}
 
 .thumbnail-hero {
     position: absolute;
