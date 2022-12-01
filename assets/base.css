@@ -259,12 +259,12 @@ a {
 .thumbnail-hero {
     position: absolute;
     animation: drop-in 1s forwards;
-    animation-delay: 1s;
+    animation-delay: .5s;
     right: 5vw;
-    margin-top: 0;
+    margin-top: 25vh;
     border-radius: .25em;
     /* tilt the image slightly */
-    transform: perspective(200px) rotate3D(0, .2, 0, -5deg);
+    transform: perspective(100px) rotate3D(0, 0, 0, -5deg);
     /* add a drop shadow */
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -281,11 +281,11 @@ a {
 @keyframes drop-in {
     0% {
         opacity: 0;
-        margin-top: -0;
     }
     100% {
         opacity: 1;
-        margin-top: 25vh;
+        transform: perspective(200px) rotate3D(0, .2, 0, -5deg);
+
     }
     
 }
@@ -308,8 +308,6 @@ a {
 
     .thumbnail-hero {
         position: static;
-        animation: none !important;
-
         transition: all 0s ease;
         margin-top: 35px !important;
         transform: perspective(0px) rotate3D(0, 0, 0, 0deg) !important;
