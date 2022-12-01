@@ -62,16 +62,11 @@ img.hero {
     padding-bottom: 3em;
 }
 
-@media screen and (min-width: 900px) {
-    .tech-icon {
-        font-size: 55pt;
-    }
-}
 
 /* on mobile, */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 992px) {
     h1.hero {
-        margin-top: 25vh;
+        margin-top: 20vh;
     }
 
     p.hero {
