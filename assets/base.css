@@ -308,6 +308,7 @@ a {
 
     .thumbnail-hero {
         position: static;
+        animation: none !important;
 
         transition: all 0s ease;
         margin-top: 35px !important;
