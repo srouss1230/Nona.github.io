@@ -1,5 +1,5 @@
 // make a fetch request to the url
-let URL = "https://zachcohn.me/letseat/api/charge_sucess"
+let URL = "https://zachcohn.me/letseat/api/charge_success"
 
 fetch(URL, {
     method: "GET",
@@ -19,4 +19,4 @@ fetch(URL, {
             console.error(error);
         });
 
-        
+
