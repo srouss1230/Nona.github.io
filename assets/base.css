@@ -344,3 +344,15 @@ a {
 .about_us_images{
     width:100%;
 }
+.video-player{
+    justify-content: center; 
+    display:flex; 
+    margin-top:20%; 
+    height:100%; 
+    
+}
+@media screen and (max-width: 600px){
+   .video-player{
+    margin-top: 40% 
+   }
+}
